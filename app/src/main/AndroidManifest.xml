@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smilei.islamcartoon">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_cartoon_newicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IslamCartoon">
+        <activity android:name=".itemactivity.activity.SplashActivity" android:theme="@style/Theme.IslamCartoonNo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8700040991474072~1468061274" />
+
+        <activity android:name=".itemactivity.activity.GrandmaActivity" />
+        <activity
+            android:name=".ScendActivityYoutubePlayActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".ActivityDeginSecendPaje" />
+        <activity
+            android:name=".itemactivity.activity.KahanyaActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".itemactivity.activity.OmorActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".itemactivity.activity.IslamShortActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".itemactivity.activity.AbdulBari_EnglishActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".itemactivity.activity.AbdulBari_Bangla_Activity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".YoutubePlayActivity" />
+        <activity android:name=".MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>
